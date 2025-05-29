@@ -14,6 +14,17 @@ const Index = () => {
     </svg>
   );
 
+  const AvatarShape = ({ className }: { className?: string }) => (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 139.65 179.33"
+      className={className}
+      aria-hidden="true"
+    >
+      <path className="fill-current" d="M67.15,179.33c-7.87,0-15.05-4.11-19.05-11.03L2.93,90.1c-6-10.39-2.5-23.85,7.81-29.99h0S106.34,3.16,106.34,3.16c8.13-4.85,18.08-4.06,25.35,2,7.27,6.07,9.84,15.71,6.54,24.58l-50.33,135.22c-3.01,8.09-10.22,13.57-18.82,14.29-.64.06-1.28.08-1.91.08ZM18.04,72.34c-3.65,2.18-4.89,6.95-2.77,10.63l45.17,78.2c1.56,2.69,4.4,4.06,7.43,3.88,3.1-.26,5.59-2.16,6.67-5.06L124.87,24.78c1.78-4.78-1.32-7.85-2.31-8.67-.99-.82-4.56-3.32-8.94-.7L18.04,72.34Z"/>
+    </svg>
+  );
+
   return (
     <div className="min-h-screen bg-white font-kade">
       {/* Hero Section with Forest Background */}
@@ -156,15 +167,8 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center group">
-              <div className="relative mb-6 mx-auto w-48 h-48">
-                <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-12 group-hover:rotate-6 transition-transform duration-300"></div>
-                <div className="absolute inset-2 bg-white rounded-full overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                    <div className="text-green-500">
-                      <CustomIcon />
-                    </div>
-                  </div>
-                </div>
+              <div className="relative mb-6 mx-auto w-48 h-56">
+                <AvatarShape className="w-full h-full text-green-400 transform group-hover:scale-105 transition-transform duration-300" />
               </div>
               <h4 className="text-xl font-bold mb-2 text-gray-900">Natan Bueno</h4>
               <p className="text-green-600 font-semibold mb-2">Tech Lead</p>
@@ -174,15 +178,8 @@ const Index = () => {
             </div>
 
             <div className="text-center group">
-              <div className="relative mb-6 mx-auto w-48 h-48">
-                <div className="absolute inset-0 bg-green-400 rounded-full transform -rotate-12 group-hover:-rotate-6 transition-transform duration-300"></div>
-                <div className="absolute inset-2 bg-white rounded-full overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                    <div className="text-purple-500">
-                      <CustomIcon />
-                    </div>
-                  </div>
-                </div>
+              <div className="relative mb-6 mx-auto w-48 h-56">
+                <AvatarShape className="w-full h-full text-purple-400 transform group-hover:scale-105 transition-transform duration-300" />
               </div>
               <h4 className="text-xl font-bold mb-2 text-gray-900">Alice Carasai</h4>
               <p className="text-purple-600 font-semibold mb-2">Especialista em auditoria, compliance e governança</p>
@@ -191,15 +188,8 @@ const Index = () => {
             </div>
 
             <div className="text-center group">
-              <div className="relative mb-6 mx-auto w-48 h-48">
-                <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-300"></div>
-                <div className="absolute inset-2 bg-white rounded-full overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
-                    <div className="text-yellow-500">
-                      <CustomIcon />
-                    </div>
-                  </div>
-                </div>
+              <div className="relative mb-6 mx-auto w-48 h-56">
+                <AvatarShape className="w-full h-full text-yellow-400 transform group-hover:scale-105 transition-transform duration-300" />
               </div>
               <h4 className="text-xl font-bold mb-2 text-gray-900">Rariel Gigante</h4>
               <p className="text-yellow-600 font-semibold mb-2">Engenheiro de Software</p>
