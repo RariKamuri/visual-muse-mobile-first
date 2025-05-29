@@ -1,11 +1,21 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Circle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
+  const CustomIcon = () => (
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 139.65 179.33"
+      className="w-8 h-8"
+      aria-hidden="true"
+    >
+      <path className="fill-current" d="M67.15,179.33c-7.87,0-15.05-4.11-19.05-11.03L2.93,90.1c-6-10.39-2.5-23.85,7.81-29.99h0S106.34,3.16,106.34,3.16c8.13-4.85,18.08-4.06,25.35,2,7.27,6.07,9.84,15.71,6.54,24.58l-50.33,135.22c-3.01,8.09-10.22,13.57-18.82,14.29-.64.06-1.28.08-1.91.08ZM18.04,72.34c-3.65,2.18-4.89,6.95-2.77,10.63l45.17,78.2c1.56,2.69,4.4,4.06,7.43,3.88,3.1-.26,5.59-2.16,6.67-5.06L124.87,24.78c1.78-4.78-1.32-7.85-2.31-8.67-.99-.82-4.56-3.32-8.94-.7L18.04,72.34Z"/>
+    </svg>
+  );
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-kade">
       {/* Hero Section with Forest Background */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
@@ -79,7 +89,7 @@ const Index = () => {
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <Circle className="w-8 h-8 text-green-400" />
+                  <CustomIcon />
                 </div>
               </div>
               <CardContent className="p-6">
@@ -99,7 +109,7 @@ const Index = () => {
               <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-200 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <Circle className="w-8 h-8 text-yellow-400" />
+                  <CustomIcon />
                 </div>
               </div>
               <CardContent className="p-6">
@@ -119,7 +129,7 @@ const Index = () => {
               <div className="h-48 bg-gradient-to-br from-green-100 to-green-200 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <Circle className="w-8 h-8 text-blue-400" />
+                  <CustomIcon />
                 </div>
               </div>
               <CardContent className="p-6">
@@ -150,7 +160,9 @@ const Index = () => {
                 <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-12 group-hover:rotate-6 transition-transform duration-300"></div>
                 <div className="absolute inset-2 bg-white rounded-full overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                    <Circle className="w-16 h-16 text-green-500" />
+                    <div className="text-green-500">
+                      <CustomIcon />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -166,7 +178,9 @@ const Index = () => {
                 <div className="absolute inset-0 bg-green-400 rounded-full transform -rotate-12 group-hover:-rotate-6 transition-transform duration-300"></div>
                 <div className="absolute inset-2 bg-white rounded-full overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                    <Circle className="w-16 h-16 text-purple-500" />
+                    <div className="text-purple-500">
+                      <CustomIcon />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -181,7 +195,9 @@ const Index = () => {
                 <div className="absolute inset-0 bg-green-400 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-300"></div>
                 <div className="absolute inset-2 bg-white rounded-full overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
-                    <Circle className="w-16 h-16 text-yellow-500" />
+                    <div className="text-yellow-500">
+                      <CustomIcon />
+                    </div>
                   </div>
                 </div>
               </div>
